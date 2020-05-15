@@ -1,0 +1,6 @@
+/.vscode/*cache*/
+/build*/
+.DS_Store
+/.ccls-cache/
+/compile_commands.json
+/.clangd/

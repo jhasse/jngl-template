@@ -1,0 +1,37 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "LLDB extension",
+			"program": "${workspaceRoot}/build/jngl-template",
+			"args": [],
+			"cwd": "${workspaceRoot}",
+			"preLaunchTask": "build"
+		},
+		{
+			"name": "jngl-template (C/C++ extension)",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/build/jngl-template",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": true,
+			"MIMode": "gdb",
+			"windows": {
+				"miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe"
+			},
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"preLaunchTask": "build"
+		}
+	]
+}
